@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header/side bar -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-cyan" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Education</a>
+    <a href="skills.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Skills</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Gallery</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Contact Me</a>
+  </div>
+  
+  <div id="main">
+  
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge w3-hover-white" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container w3-wide w3-large">
+        <p><b>Hi, Welcome</b></p>
+      <div class="w3-right w3-xlarge w3-hover-blue w3-hover-text-white">
+        <i class="fa fa-user-circle w3-margin-bottom"></i>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+
+<!-- slideshow -->
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 100%; height: 400px; object-fit: cover;">
+    <img class="mySlides" src="https://images.pexels.com/photos/2255441/pexels-photo-2255441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  style="width: 100%; height: 400px; object-fit: cover;">
+    <img class="mySlides" src="https://images.pexels.com/photos/2045600/pexels-photo-2045600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  style="width: 100%; height: 400px; object-fit: cover;">
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 5 seconds
+  }
+  </script>
+
+  <!-- content -->
+  <div class="w3-row">
+    <div class="w3-col" style="width: 350px;">
+    <h3 class="w3-margin-left"><b>I am Lakshan</b></h3>
+    <img class="w3-card-4 w3-margin-left w3-margin-bottom" src="https://drive.google.com/uc?export=view&id=12Jqu-U7y5w8WatueBNZRuagyd0TvTV95" alt="" style="width: 280px; height: 320px;">
+    </div>
+
+    <div class="w3-rest w3-center">
+      <h3 class="w3-wide w3-margin-top"><b>About me</b></h3>
+      <p ><b> My name is Ravishka Lakshan and I am 21,
+         I lives in Matale. I am a hard-working and driven individual who isn't afraid to face a challenge.
+          I'm passionate about my work and I know how to get the job done.
+           I would describe myself as an open and honest person who doesn't believe in misleading
+            other people and tries to be fair in everything I do.</b></p>
+    </div>
+  </div>
+
+<!-- footer -->
+<div class="w3-container w3-pale-blue w3-center">
+    <p>&copy;2023 | Allrights reserved by Lakshan KGR</p>
+</div>
+    
+</body>
+</html>

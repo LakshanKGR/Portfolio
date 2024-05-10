@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  
+</style>
+<body>
+<!-- Header/side bar -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-cyan" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hover-aqua"
+    onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Home</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Education</a>
+    <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Skills</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Gallery</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Contact Me</a>
+  </div>
+  
+  <div id="main">
+  
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge  w3-hover-white" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container w3-wide w3-large">
+        <p><b>Hi, Welcome</b></p>
+      <div class="w3-right w3-xlarge w3-hover-blue w3-hover-text-yellow">
+        <i class="fa fa-user-circle w3-margin-bottom"></i>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+
+<div class="myskill">
+  <div class="skill">
+    <h2>My Skills</h2>
+
+    <li><h3>html</h3>
+      <div class="bar"><div class="html"></div></div>
+    </li>
+
+    <li><h3>css</h3>
+      <div class="bar"><div class="css"></div></div>
+    </li>
+
+    <li><h3>javascript</h3>
+      <div class="bar"><div class="javascript"></div></div>
+    </li>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="w3-container w3-center w3-pale-blue">
+    <p>&copy;2023 | Allrights reserved by Lakshan KGR</p>
+</div>
+    
+</body>
+</html>

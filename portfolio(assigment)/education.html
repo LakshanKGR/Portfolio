@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+<!-- Header/side bar -->
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-cyan" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Education</a>
+    <a href="skills.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Skills</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Gallery</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-xlarge w3-hover-aqua">Contact Me</a>
+  </div>
+  
+  <div id="main">
+  
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge w3-hover-white" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container w3-wide w3-large">
+        <p><b>Hi, Welcome</b></p>
+      <div class="w3-right w3-xlarge w3-hover-blue w3-hover-text-yellow">
+        <i class="fa fa-user-circle w3-margin-bottom"></i>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+
+<!-- Content -->
+<div class="w3-content">
+  <h2><b>My Educational qualifications</b></h2>
+
+  <div class="w3-row w3-border">
+    <div class="w3-container w3-half">
+      <h2>G.C.E (O/L) EXAMINATION</h2>  
+      <p>Year: 2016</p>
+      <p>Index Number: 62208446</p>
+      <br>
+      <table class="w3-table w3-aqua w3-border w3-margin-bottom">
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td>Buddhism</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>Sinhala lang.</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td><b>S</b></td>
+        </tr>
+        <tr>
+          <td>Mathematics</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>History</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>Art</td>
+          <td><b>S</b></td>
+        </tr>
+        <tr>
+          <td>Business stud. & Acc.</td>
+          <td><b>S</b></td>
+        </tr>
+        <tr>
+          <td>Health & phy. edu</td>
+          <td><b>C</b></td>
+        </tr>
+      </table>
+    </div>
+    <div class="w3-container w3-half">
+      <h2>G.C.E (A/L) EXAMINATION</h2>
+      <p>Year: 2019</p>
+      <p>Index Number: 6347584</p>
+      <br>
+      <table class="w3-table w3-aqua w3-border">
+        <th><b>Subject</b></th>
+        <th><b>Grade</b></th>
+        <tr>
+          <td>Genarel English</td>
+          <td><b>C</b></td>
+        </tr>
+        <tr>
+          <td>Business Studies</td>
+          <td><b>S</b></td>
+        </tr>
+        <tr>
+          <td>Economics</td>
+          <td><b>F</b></td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td><b>F</b></td>
+        </tr>
+      </table> 
+
+    </div>
+  </div>
+  
+</div>
+
+<!-- footer -->
+<div class="w3-container w3-center w3-pale-blue">
+    <p>&copy;2023 | Allrights reserved by Lakshan KGR</p>
+</div>
+    
+</body>
+</html>
